@@ -2,7 +2,7 @@
   <%= cl_image_tag room.photo.key, crop: :fill %>
   <div class="card-trip-infos">
     <div>
-      <h2><%= room.hotel.name %></h2>
+      <h2><%= link_to room.hotel.name, room_path(room) %></h2>
       <p><%= room.hotel.address %></p>
       <p><i class="fa-solid fa-user-group"></i> <%= room.capacity %></p>
     </div>

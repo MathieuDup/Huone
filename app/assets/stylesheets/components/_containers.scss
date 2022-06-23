@@ -4,3 +4,22 @@
   grid-gap: 16px;
   margin-top: 16px;
 }
+
+.room-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.room-infos {
+  height: 70vh;
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+  text-align: left;
+  align-items: center;
+  justify-self: end;
+  a {
+    text-decoration: none;
+  }
+}
