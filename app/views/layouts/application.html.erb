@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsBookRoomsChallenge</title>
+    <title>Huone</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,6 +16,12 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
 
-    <%= yield %>
+    <% if params[:controller] == "pages" && params[:action] == "home" %>
+      <%= render 'shared/banner' %>
+    <% end %>
+
+    <div class="container mt-4 mb-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
