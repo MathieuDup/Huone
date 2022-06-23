@@ -1,0 +1,11 @@
+<div class="card-trip">
+  <%= cl_image_tag room.photo.key, crop: :fill %>
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= room.hotel.name %></h2>
+      <p><%= room.hotel.address %></p>
+      <p><i class="fa-solid fa-user-group"></i> <%= room.capacity %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= room.price_per_night%> €/night</h2>
+  </div>
+</div>

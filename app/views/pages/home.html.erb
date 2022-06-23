@@ -1,7 +1,7 @@
-<h2 id="rooms-anchor">Trending rooms</h2>
+<h2 id="rooms-anchor">Popular rooms</h2>
 
-<div class="cards-rooms">
+<div class="cards-rooms-container">
   <% @best_rooms.each do |room| %>
-    <%= render 'rooms/card_room', room: room%>
+    <%= render 'rooms/card_room', room: room %>
   <% end %>
 </div>
