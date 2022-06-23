@@ -1,0 +1,7 @@
+<h2 id="rooms-anchor">All rooms</h2>
+
+<div class="cards-rooms-container">
+  <% @rooms.each do |room| %>
+    <%= render 'rooms/card_room', room: room %>
+  <% end %>
+</div>
