@@ -45,3 +45,15 @@
   border-color: $light-red;
   border-style: solid;
 }
+
+.swal-button {
+  background-color: $light-red;
+  color: $light-creme;
+  border-color: $light-red;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: $light-creme;
+  color: $light-red;
+  border-color: $light-creme;
+}

@@ -9,11 +9,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.room = @room
     @booking.user = current_user
-    if @booking.save
-      redirect_to room_path(@room), notice: 'Booking was successfully created.'
-    else
-      render :new
-    end
+    redirect_to room_path(@room), notice: "An error has occured, please try again" unless @booking.save
   end
 
   private
