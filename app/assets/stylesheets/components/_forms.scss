@@ -1,0 +1,9 @@
+.inline_field_wrapper {
+  display: inline-block;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  cursor: pointer;
+  background-color: #ffffff;
+  width: 197px;
+}

@@ -4,6 +4,10 @@
   border-bottom: 1px solid $dark-gray;
 }
 
+.navbar-brand {
+  padding-bottom: 0px;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: $light-creme;
 }
@@ -17,5 +21,5 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 50px;
 }

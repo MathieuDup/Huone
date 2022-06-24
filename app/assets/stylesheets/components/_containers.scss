@@ -15,11 +15,15 @@
   height: 70vh;
   position: sticky;
   top: 0;
-  padding-top: 20px;
+  padding-top: 9px;
   text-align: left;
   align-items: center;
   justify-self: end;
   a {
     text-decoration: none;
+  }
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
