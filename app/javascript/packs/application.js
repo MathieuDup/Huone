@@ -8,6 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import { initFlatpickr } from "../plugins/flatpickr";
+import { initSweetalert } from '../plugins/init_sweetalert';
 
 
 
@@ -31,4 +32,14 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initFlatpickr();
+  initSweetalert('#sweet-alert-demo', {
+    title: "Congratulations",
+    text: "Your booking is confirm. Don't forget to check your email for confirmation. Your payment will be due at the desk on your check-in day.",
+    icon: "success"
+  }, (value) => {
+    if (value) {
+      const link = document.querySelector('#post-link');
+      link.click();
+    }
+  });
 });
