@@ -1,10 +1,17 @@
 .room-image {
-  width: 100%;
+  width: 700px;
   height: 80vh;
 }
 
 .room-img {
-  width: 750px;
+  width: 675px;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0.5rem;
+}
+
+.card-trip-img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }

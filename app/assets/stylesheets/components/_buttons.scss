@@ -1,22 +1,47 @@
 .btn-red {
   color: $light-creme;
+  background: $light-red;
   padding: 8px 24px;
   border-radius: 4px;
-  background: $light-red;
   transition: background-color 0.3s ease;
   display: inline-block;
   border-color: $light-red;
   border-style: solid;
-  text-transform: capitalize;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 .btn-red:hover {
+  color: $light-red;
   background: $light-creme;
   padding: 8px 24px;
   border-radius: 4px;
-  color: $light-red;
   display: inline-block;
   border-color: $light-creme;
   border-style: solid;
-  text-transform: capitalize;
+}
+
+.btn-white {
+  color: $light-red;
+  background: $light-creme;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  border-color: $light-creme;
+  border-style: solid;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.btn-white:hover {
+  color: $light-creme;
+  background: $light-red;
+  padding: 8px 24px;
+  border-radius: 4px;
+  display: inline-block;
+  border-color: $light-red;
+  border-style: solid;
 }

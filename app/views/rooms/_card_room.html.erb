@@ -1,5 +1,9 @@
 <div class="card-trip">
-  <%= cl_image_tag room.photo.key, crop: :fill %>
+  <div class="card-trip-image">
+    <%= link_to room_path(room) do %>
+    <%= cl_image_tag room.photo.key, crop: :fill, class: "card-trip-img"%>
+    <% end %>
+  </div>
   <div class="card-trip-infos">
     <div>
       <h2><%= link_to room.hotel.name, room_path(room) %></h2>

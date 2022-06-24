@@ -1,9 +1,8 @@
 
   <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
     <%= simple_form_for [room, booking] do |f| %>
-      <%= f.input :starts_at, as: :string, label: "Check-in date", input_html: {id: "range_start"} %>
-      <%= f.input :ends_at, as: :string, label: "Check-out date", input_html: {id: "range_end"} %>
-      <%# add a select that asks the user for a number of guests and compare it to room capacity %>
+      <%= f.input :starts_at, as: :string, label: "Check-in date", input_html: {id: "range_start", maxlength: 3}, wrapper_html: { class: "inline_field_wrapper" } %>
+      <%= f.input :ends_at, as: :string, label: "Check-out date", input_html: {id: "range_end", maxlength: 3}, wrapper_html: { class: "inline_field_wrapper" } %>
       <%= f.input :guests, as: :select, collection: (1..@room.capacity), label: "Number of guests" %>
       <%= f.button :submit, "Book", class: "btn btn-red" %>
     <% end %>

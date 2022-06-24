@@ -1,17 +1,18 @@
 <div class="room-container">
   <div class="room-image">
+    <%= link_to rooms_path do %>
+      <i class="fa-solid fa-arrow-left"></i> Go to rooms list
+    <% end %>
     <%= cl_image_tag @room.photo.key, crop: :fill, class: "room-img"%>
   </div>
 
   <div class="room-infos">
-    <%= link_to rooms_path do %>
-      <i class="fa-solid fa-arrow-left"></i> Back to rooms list
-    <% end %>
-    <h3 class="my-2"><%= @room.hotel.name %></h2>
+    <h3><%= @room.hotel.name %></h2>
     <p>Price: <%= @room.price_per_night %>€ per night</p>
     <p><i class="fa-solid fa-user-group"></i> <%= @room.capacity %></p>
     <hr>
     <h3>Hotel's address</h2>
     <p><%= @room.hotel.address %></p>
     <%= render "bookings/form", room: @room, booking: @booking %>
+  </div>
 </div>
