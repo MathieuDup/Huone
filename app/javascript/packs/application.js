@@ -34,7 +34,7 @@ document.addEventListener('turbolinks:load', () => {
   initFlatpickr();
   initSweetalert('#sweet-alert-demo', {
     title: "Congratulations",
-    text: "Your booking is confirm. Don't forget to check your email for confirmation. Your payment will be due at the desk on your check-in day.",
+    text: "Your booking is confirmed. Don't forget to check your email for details. Your payment will be due at the desk on your check-in day.",
     icon: "success"
   }, (value) => {
     if (value) {
